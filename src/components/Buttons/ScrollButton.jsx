@@ -9,6 +9,7 @@ const ScrollButton = () => {
     const scrollHeight = document.documentElement.scrollHeight;
     const clientHeight = document.documentElement.clientHeight;
     const fromBottom = Math.abs(scrollHeight - clientHeight - scrolled);
+
     if (fromBottom < 100) {
       setVisible(true);
     } else {
@@ -27,13 +28,13 @@ const ScrollButton = () => {
 
   return (
     <div
-      className={`fixed right-4 transition-all duration-300 bottom-20 z-10 opacity-${
+      className={`fixed right-4 transition-all duration-300 bottom-20 z-10 cursor-pointer text-primary bg-lightWhite rounded-3xl hover:scale-110 opacity-${
         visible ? '1' : '0'
-      } cursor-pointer text-primary hover:scale-110`}
+      }`}
     >
       <FaArrowCircleUp
         onClick={scrollToTop}
-        size="3rem"
+        size="48px"
         style={{ display: visible ? 'inline' : 'none' }}
       />
     </div>

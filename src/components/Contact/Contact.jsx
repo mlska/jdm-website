@@ -33,7 +33,7 @@ const Contact = forwardRef((props, ref) => {
         </div>
         <div className="flex flex-col md:flex-row justify-between">
           <section className="flex flex-col items-center justify-center w-full md:w-1/2 font-sofia p-4 lg:p-16">
-            <h1 className="text-4xl md:text-5xl font-bold uppercase">
+            <h1 className="text-2xl md:text-5xl font-bold uppercase">
               Umów swoją wizytę już dziś!
             </h1>
             <p className="text-stone-400">

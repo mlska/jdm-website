@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Offer from './components/Offer/Offer';
 import Contact from './components/Contact/Contact';
 import ScrollButton from './components/Buttons/ScrollButton';
+
 function App() {
   const ref = {
     about: useRef(null),
@@ -20,6 +21,7 @@ function App() {
       behavior: 'smooth'
     });
   };
+
   return (
     <>
       <Header scrollInto={scrollInto} />

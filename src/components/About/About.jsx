@@ -1,4 +1,5 @@
 import { forwardRef } from 'react';
+import { motion } from 'framer-motion';
 
 import gtr from '../../assets/gtr.jpg';
 import nissan from '../../assets/nissan.svg';
@@ -40,9 +41,17 @@ const About = forwardRef((props, ref) => {
       </div>
       <div>
         <section className="container mx-auto rounded-3xl bg-stone-800 md:p-4">
-          <div className="px-8 flex-wrap py-4 md:py-0 flex flex-row justify-between items-center">
+          <div className="grid grid-cols-4 md:grid-cols-8  gap-4 justify-items-center px-8 py-4 md:py-0">
             {manufacturers.map((manufacturer, index) => (
-              <img key={index} src={manufacturer} className="w-16 lg:w-24" />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                key={index}
+                src={manufacturer}
+                className="w-14 lg:w-24"
+              />
             ))}
           </div>
         </section>

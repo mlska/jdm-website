@@ -17,7 +17,7 @@ const Offer = forwardRef((props, ref) => {
     {
       title: 'Diagnostyka',
       icon: diagnotic,
-      text: 'Posiadamy najnowocześniejszy sprzęt do diagnostyki komputerowej, który umożliwia szybkie i precyzyjne wykrycie usterek sterowników.'
+      text: 'Posiadamy najnowocześniejszy sprzęt do diagnostyki komputerowej, który umożliwia szybkie i precyzyjne wykrycie usterek elektroniki.'
     },
     {
       title: 'Mechanika',
